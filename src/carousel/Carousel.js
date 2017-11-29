@@ -659,6 +659,9 @@ export default class Carousel extends Component {
         if (onMomentumScrollEnd) {
             onMomentumScrollEnd(event);
         }
+        if (onScrollEndDrag) {
+            onScrollEndDrag(event);
+        }
     }
 
     _onScrollEnd (event) {
